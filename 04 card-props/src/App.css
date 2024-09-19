@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oregano:ital@0;1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: "Mulish", sans-serif;
+  /* background: url("/assets/images/1.png") no-repeat top center;
+  min-height: 1200px; */
+}
+.container{
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.btn{
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.06px;
+  text-align: center;
+  max-width: 103.06px;
+  padding: 8.5px;
+  border-radius: 4px;
+  color: #fff;
+  background: #DC3919;
+  transition: all 0.5s;
+  border: 1px solid #DC3919;
+}
+.btn:hover{
+  border: 1px solid #DC3919;
+  background: #fff;
+  color: #DC3919;
+}
+ /* .wrapper {
+      opacity: 0.5;
+  } */
+
+
+
+/* top airfares block start */
+.airfraes-block{
+  padding: 30px 0;
+}
+.airfraes-block .airfraes-tag{
+  display: inline-block;
+  font-family: "Oregano", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.98px;
+  text-align: left;
+  color: #DC3919;
+  position: relative;
+  background: #fff;
+  z-index: 2;
+  padding-right: 6px;
+  margin-bottom: 4px;
+}
+.airfraes-block .airfraes-tag::after{
+  content: "";
+  background: #DC3919;
+  width: 61.01px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 51%;
+  transform: translateY(-50%);
+  left:100%;
+  z-index: 1;
+}
+.airfraes-block h1{
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 40.16px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.airfraes-block p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.08px;
+  text-align: left;
+}
+/* top airfares block end */
+
+/* flight details block start */
+
+
+.flight-card{
+  padding: 10px;
+  width: 100%;
+  min-height: 164px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px #0000001F;
+}
+.flight-card:not(:last-child){
+  margin-bottom: 14px;
+}
+.flight-details{
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #E0E0E0;
+  margin-bottom: 10px;
+}
+.going-on{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.going-details{
+  display: flex;
+  gap: 10px;
+}
+
+.loc-to{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.57px;
+}
+
+.locations-icon{
+  background: url('assets/images/plane-icon.svg') no-repeat;
+  display: block;
+  width: 38px;
+  height: 19px;
+  background-size: 38px;
+  margin-top: 2px;
+}
+
+.loc-to.tag-line{
+  border-right: 1px solid #000000;
+  padding-right: 6px;
+}
+
+.time-on{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.08px;
+  color: #333333;
+}
+.loc-go{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15.06px;
+  color: #A5A5A5;
+}
+.date-go{
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15.06px;
+  color: #5A5A5A;
+
+}
+.time-show{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+  text-align: left;
+  color: #838383;
+}
+.total-time{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.go-icon{
+  background: url(assets/images/go-icon.svg) no-repeat;
+  display: block;
+  width: 89px;
+  height: 8px;
+  background-size: 80px;
+  margin-top: 2px;
+}
+.all-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flight-time{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.flight-time.right-block{
+  align-items: end;
+}
+.price-show{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.12px;
+  color: #333333;
+}
+.flight-price{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* flight details block end */
+
+
+
+
+
+@media all and (min-width: 768px){
+  .airfraes-block .airfraes-tag{
+      font-size: 24px;
+  }
+  .airfraes-block h1{
+      font-size: 32px;
+  
+  }
+  .airfraes-block p{
+      font-size: 16px;
+  
+  }
+  .flight-block .container{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px 10px;
+      justify-content: space-between;
+
+  }
+  .flight-card{
+      width: 48.7%;
+      margin-bottom: 0;
+  }
+  .flight-card:not(:last-child) {
+      margin-bottom: 0px;
+  }
+  .go-icon{
+      background: url(assets/images/go-icon.svg) no-repeat;
+      display: block;
+      width: 114px;
+      height: 8px;
+      background-size: 114px;
+      margin-top: 2px;
+  }
+}
+
+@media all and (min-width: 1024px){
+  .airfraes-block {
+      padding: 132px 0 18px;
+  }
+  .airfraes-block .airfraes-tag {
+      margin-bottom: 17px;
+  }
+  .airfraes-block h1 {
+      font-size: 32px;
+      margin-bottom: 17px;
+  }
+  .flight-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 27px 31px;  
+      padding-right: 21px;
+  }
+  .flight-price {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+  }
+  .flight-details {
+      padding-bottom: 0;
+      border-right: 1px dashed #E0E0E0;
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-right: 20px;
+      margin-right: 20px;
+  }
+  .price-show {
+      font-size: 24px;
+      white-space: nowrap;
+  }
+  .time-on {
+      font-size: 16px;
+      margin-bottom: 6px;
+
+  }
+  .loc-go {
+      font-size: 12px;
+      margin-bottom: 6px;
+  }
+  .date-go {
+      font-size: 12px;
+  }
+  .loc-to.tag-line {
+      padding-right: 7px;
+      margin-right: 5px;
+  }
+  
+}
+
+@media all and (min-width: 1200px){
+  .flight-card {
+      justify-content: start;
+      align-items: center;
+  }
+  .going-details {
+      display: flex;
+      gap: 7.7px;
+  }
+  .flight-details {
+      padding-right: 25px;
+      margin-right: 24px;
+  }
+  .go-icon {
+      margin-top: -5px;
+  }
+  .all-details {
+      gap: 26px;
+  }
+  .going-on {
+      margin-bottom: 18px;
+  }
+  .btn {
+      max-width: 100%;
+      width: 103.06px;
+  }
+}
